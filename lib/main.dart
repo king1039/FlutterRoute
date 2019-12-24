@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       //   '/form': (context) => FormPage(),
       //   '/search': (context) => SearchPage(),
       // },
+      debugShowCheckedModeBanner: false, //去掉debug图标
       initialRoute: '/', //初始化的时候加载路由
       onGenerateRoute: onGenerateRoutes,
     );

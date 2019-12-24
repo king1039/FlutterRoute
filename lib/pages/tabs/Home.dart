@@ -37,6 +37,24 @@ class _HomePageState extends State<HomePage> {
             Navigator.pushNamed(context, '/product');
           },
         ),
+        SizedBox(
+          height: 20,
+        ),
+        RaisedButton(
+          child: Text("跳转到AppBar"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/appBarDemo');
+          },
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        RaisedButton(
+          child: Text("跳转到TabController自定义顶部切换"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/tabBarController');
+          },
+        ),
       ],
     );
   }
