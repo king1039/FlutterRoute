@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'pages/Tabs.dart';
 import 'routes/Routes.dart';
 
 void main() {

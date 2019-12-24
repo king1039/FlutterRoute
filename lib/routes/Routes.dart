@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../pages/Tabs.dart';
+import '../pages/Tabs2.dart';
 import '../pages/Form.dart';
 import '../pages/Search.dart';
 import '../pages/Product.dart';
@@ -16,6 +17,7 @@ import '../pages/Button.dart';
 //配置路由
 final routes = {
   '/': (context, {arguments}) => Tabs(),
+  // '/': (context, {arguments}) => Tabs2(),
   '/form': (context) => FormPage(),
   '/product': (context) => ProductPage(),
   '/productInfo': (context, {arguments}) =>
