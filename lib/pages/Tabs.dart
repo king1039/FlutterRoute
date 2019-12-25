@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'tabs/Home.dart';
 import 'tabs/Category.dart';
 import 'tabs/Setting.dart';
+import 'tabs/Mine.dart';
 
 class Tabs extends StatefulWidget {
   final int index;
@@ -16,7 +17,7 @@ class _TabsState extends State<Tabs> {
   _TabsState(index) {
     this._currentIndex = index;
   }
-  List _pageList = [HomePage(), CategoryPage(), SettingPage()];
+  List _pageList = [HomePage(), CategoryPage(), SettingPage(), MinePage()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +32,7 @@ class _TabsState extends State<Tabs> {
             this._currentIndex = index;
           });
         },
-        // type: BottomNavigationBarType.fixed,//可以配置超过4个以上的icon
+        type: BottomNavigationBarType.fixed, //可以配置超过4个以上的icon
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -44,6 +45,10 @@ class _TabsState extends State<Tabs> {
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             title: Text("设置"),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.people),
+            title: Text("我的"),
           ),
         ],
       ),

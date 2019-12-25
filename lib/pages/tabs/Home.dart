@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
           textTheme: ButtonTextTheme.primary,
         ),
         SizedBox(
-          height: 20,
+          height: 10,
         ),
         RaisedButton(
           child: Text("跳转到商品页面"),
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
           },
         ),
         SizedBox(
-          height: 20,
+          height: 10,
         ),
         RaisedButton(
           child: Text("跳转到AppBar"),
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
           },
         ),
         SizedBox(
-          height: 20,
+          height: 10,
         ),
         RaisedButton(
           child: Text("跳转到TabController自定义顶部切换"),
@@ -56,13 +56,7 @@ class _HomePageState extends State<HomePage> {
           },
         ),
         SizedBox(
-          height: 20,
-        ),
-        RaisedButton(
-          child: Text("跳转到buttons页面"),
-          onPressed: () {
-            Navigator.pushNamed(context, '/button');
-          },
+          height: 10,
         ),
       ],
     );
