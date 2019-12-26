@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../components/MyDialog.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -57,6 +58,31 @@ class _HomePageState extends State<HomePage> {
         ),
         SizedBox(
           height: 10,
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("跳转到对话框页面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/dialog');
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("自定义对话框页面"),
+          onPressed: () {
+            showDialog(
+                context: context,
+                builder: (context) {
+                  return MyDialog(
+                    title: "关于我们",
+                    content: "这是内容",
+                  );
+                });
+          },
         ),
       ],
     );

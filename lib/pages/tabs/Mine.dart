@@ -56,6 +56,33 @@ class _MinePageState extends State<MinePage> {
             Navigator.pushNamed(context, '/formDemo');
           },
         ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("日期页面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/date');
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("第三方页面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/datePub');
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("轮播图页面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/swiper');
+          },
+        ),
       ],
     );
   }

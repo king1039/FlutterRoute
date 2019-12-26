@@ -17,6 +17,10 @@ import '../pages/TextField.dart';
 import '../pages/CheckBox.dart';
 import '../pages/Radio.dart';
 import '../pages/FormDemo.dart';
+import '../pages/Date.dart';
+import '../pages/DatePub.dart';
+import '../pages/Swiper.dart';
+import '../pages/Dialog.dart';
 
 //配置路由
 final routes = {
@@ -39,6 +43,10 @@ final routes = {
   '/checkBox': (context) => CheckBoxPage(),
   '/radio': (context) => RadioPage(),
   '/formDemo': (context) => FormDemoPage(),
+  '/date': (context) => DatePage(),
+  '/datePub': (context) => DatePubPage(),
+  '/swiper': (context) => SwiperPage(),
+  '/dialog': (context) => DialogPage(),
 };
 
 //固定写法
